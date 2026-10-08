@@ -1,0 +1,212 @@
+# ====================================================================
+# PROJECT CORE (Modern Tooling)
+# ====================================================================
+.venv/
+node_modules/
+.lefthook/
+.cache/
+.cspellcache/
+.ruff_cache/
+.mypy_cache/
+.pytest_cache/
+megalinter-reports/
+.mega-linter.log
+*.bak
+*.swp
+.directory
+temp_*/
+
+# Lychee
+cookie-jar
+.lycheecache
+
+# Ignoriere alle temporären Shell-Skripte
+temp_*.sh
+temp_*.txt
+temp_*.md
+
+# Oder ignoriere einen ganzen Ordner für Experimente
+scripts/scratchpad/
+
+# ====================================================================
+# BUILD & COMPILATION (Global Patterns)
+# ====================================================================
+[Bb]uild/
+[Dd]ebug/
+[Oo]ut/
+[Tt]esting/
+target/
+dist/
+bin/
+# Compiled objects, libraries and executables
+*.o
+*.obj
+*.so
+*.so.*
+*.a
+*.lib
+*.la
+*.lai
+*.lo
+*.slo
+*.dll
+*.dylib
+*.exe
+*.out
+*.app
+*.pdb
+*.ilk
+*.exp
+
+# ====================================================================
+# LANGUAGES SPECIFIC
+# ====================================================================
+# Python
+__pycache__/
+*.py[codz]
+*$py.class
+.Python
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+.pdm-python
+.pdm-build/
+
+# Rust
+**/*.rs.bk
+**/mutants.out*/
+
+# C++ & CMake
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps/
+CMakeUserPresets.json
+
+# Qt
+*.moc
+moc_*.cpp
+moc_*.h
+qrc_*.cpp
+ui_*.h
+*.qmlc
+*.jsc
+/.qmake.cache
+/.qmake.stash
+*.pro.user*
+*_qmlcache.qrc
+
+# ====================================================================
+# DOCUMENTATION & CONFIG
+# ====================================================================
+docs/node_modules/
+docs/dist
+docs/.astro
+.vale/
+# Important: Do NOT ignore .github/config/styles if you commit them
+
+# ====================================================================
+# Astro specific
+# ====================================================================
+.astro/
+
+# ====================================================================
+# IDE & OS
+# ====================================================================
+.idea/
+.vscode/
+*.iml
+*.autosave
+.DS_Store
+Thumbs.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# ====================================================================
+# DATABASE & LOGS
+# ====================================================================
+*.log
+*.sqlite*
+*.db
+*.db-*
+*.db3
+*.db3-*
+.env
+.env.production
+.envrc
+.cspellcache
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+
+# Ruby https://github.com/github/gitignore/blob/main/Ruby.gitignore
+*.gem
+*.rbc
+/.config
+/coverage/
+/InstalledFiles
+/pkg/
+/spec/reports/
+/spec/examples.txt
+/test/tmp/
+/test/version_tmp/
+/tmp/
+
+# Used by dotenv library to load environment variables.
+# .env
+
+# Ignore Byebug command history file.
+.byebug_history
+
+## Specific to RubyMotion:
+.dat*
+.repl_history
+build/
+*.bridgesupport
+build-iPhoneOS/
+build-iPhoneSimulator/
+
+## Specific to RubyMotion (use of CocoaPods):
+#
+# We recommend against adding the Pods directory to your .gitignore. However
+# you should judge for yourself, the pros and cons are mentioned at:
+# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
+#
+# vendor/Pods/
+
+## Documentation cache and generated files:
+/.yardoc/
+/_yardoc/
+/doc/
+/rdoc/
+
+## Environment normalization:
+/.bundle/
+/vendor/bundle
+/lib/bundler/man/
+
+# for a library or gem, you might want to ignore these files since the code is
+# intended to run in multiple environments; otherwise, check them in:
+# Gemfile.lock
+# .ruby-version
+# .ruby-gemset
+
+# unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
+.rvmrc
+
+# Used by RuboCop. Remote config files pulled in from inherit_from directive.
+# .rubocop-https?--*
