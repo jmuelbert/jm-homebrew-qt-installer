@@ -1,0 +1,13 @@
+---
+# SPDX-License-Identifier: EUPL-1.2
+# SPDX-FileCopyrightText: Jürgen Mülbert <juergen.muelbert@gmail.com>
+
+packages:
+  - docs
+allowBuilds:
+  '@vvago/vale': true
+  core-js: true
+  core-js-pure: true
+  esbuild: false # set this to true or false
+  lefthook: true
+  sharp: false
