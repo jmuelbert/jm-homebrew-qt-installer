@@ -1,0 +1,36 @@
+---
+title: Welcome to jm-homebrew-qt-installer
+description: Install and test the Qt Installer Framework with Homebrew for versioned, reproducible installer builds.
+template: splash
+hero:
+  tagline: A reliable, CI-ready way to install QtIFW and build installers reproducibly.
+  image:
+    file: ../../assets/logo.svg
+  actions:
+    - text: Get Started
+      icon: right-arrow
+      link: /getting-started/
+      variant: primary
+    - text: View on GitHub
+      link: https://github.com/jmuelbert/jm-homebrew-qt-installer
+      icon: external
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## Project Features
+
+<CardGrid stagger>
+  <Card title="Homebrew Installation" icon="seti:homebrew">
+    Install the Qt Installer Framework (QtIFW) using a Homebrew formula.
+  </Card>
+  <Card title="Versioned Releases" icon="approve-check">
+    Use a defined QtIFW version to keep local development and CI builds consistent.
+  </Card>
+  <Card title="CI-Ready Tooling" icon="seti:github">
+    Add QtIFW installation and setup checks to your automated build workflows.
+  </Card>
+  <Card title="Reproducible Builds" icon="setting">
+    Keep installer build environments predictable across machines and CI runs.
+  </Card>
+</CardGrid>
