@@ -22,7 +22,6 @@ updates:
       prefix: chore(actions)
       include: scope
 
-
   # --- Python (pip) ---
   - package-ecosystem: pip
     directory: /
