@@ -1,4 +1,5 @@
 adoc
+astrojs
 biomejs
 CLIPPY
 esac
