@@ -1,0 +1,135 @@
+name: Accessibility issue
+description: Report an accessibility barrier in jm-homebrew-qt-installer.
+title: "[a11y]: <short description of the issue>"
+labels: ["accessibility"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting an accessibility issue. Reports like yours help us make jm-homebrew-qt-installer easier to use and contribute to.
+
+        Share only what you're comfortable sharing. Partial reports are still useful, and you don't need to disclose a diagnosis or other personal information.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Briefly describe the accessibility barrier.
+      placeholder: "Example: The installation instructions don't explain how to confirm that the command completed successfully."
+    validations:
+      required: true
+
+  - type: textarea
+    id: affected-area
+    attributes:
+      label: Affected command, file, or documentation
+      description: Name the command, file, or documentation section where you encountered the issue.
+      placeholder: "Example: Installation instructions in the Getting Started guide"
+    validations:
+      required: false
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What did you expect to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: What happened instead?
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Describe how to reproduce the issue, if possible.
+      placeholder: |
+        1. Follow the installation instructions.
+        2. Run the command...
+        3. Observe that...
+    validations:
+      required: true
+
+  - type: textarea
+    id: supporting-material
+    attributes:
+      label: Supporting material (optional)
+      description: Add a screenshot, recording, terminal output, or code sample if it helps explain the issue. Remove any sensitive information before sharing.
+    validations:
+      required: false
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity (maintainers may adjust this during triage)
+      description: |
+        How much does this issue affect your ability to use or contribute to the project?
+        - **Critical:** Prevents a core task, such as installing or using the project.
+        - **Serious:** Causes significant difficulty, but a workaround exists.
+        - **Moderate:** Causes noticeable difficulty or an inconsistent experience.
+        - **Minor:** Has a small effect on usability.
+      options:
+        - Critical
+        - Serious
+        - Moderate
+        - Minor
+      default: 3
+    validations:
+      required: true
+
+  - type: input
+    id: operating-system
+    attributes:
+      label: Operating system and version
+      placeholder: "macOS 15, Ubuntu 24.04, Windows 11"
+    validations:
+      required: false
+
+  - type: input
+    id: terminal
+    attributes:
+      label: Terminal or shell (if relevant)
+      placeholder: "Terminal.app, iTerm2, bash, zsh"
+    validations:
+      required: false
+
+  - type: input
+    id: assistive-technology
+    attributes:
+      label: Assistive technology and version (if relevant)
+      description: Share the tools you used, if relevant. You do not need to provide this information.
+      placeholder: "VoiceOver on macOS, NVDA on Windows"
+    validations:
+      required: false
+
+  - type: input
+    id: related-guidance
+    attributes:
+      label: Related accessibility guidance (optional)
+      description: If you know of a relevant accessibility guideline, you can include it here. This is optional.
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Share any workaround, related issue, or other detail that may help us investigate.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: code-of-conduct
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow the project's Code of Conduct.
+      options:
+        - label: I agree to follow this project's Code of Conduct.
+          required: true
