@@ -54,7 +54,7 @@
 		"@types/react-dom": "^19.3.0",
 		"@vvago/vale": "^3.24.0",
 		"commitlint": "^21.2.3",
-		"cspell": "^10.3.6",
+		"cspell": "^10.4.0",
 		"gh-pages": "^6.3.0",
 		"git-cliff": "^2.14.2",
 		"globals": "^17.13.0",
